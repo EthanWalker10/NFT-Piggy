@@ -9,8 +9,8 @@ import {BasicNft} from "../src/BasicNft.sol";
 // for mint, not deploy
 contract MintBasicNft is Script {
     string public constant PUG_URI =
-        // "ipfs://bafybeig37ioir76s7mg5oobetncojcm3c3hxasyd4rvid4jqhy4gkaheg4/?filename=0-PUG.json";
-        "ipfs://QmPDK74AL4zxFHY563uTdoSc9Xk9Q5HXMvzPwRmgVtdcZc?filename=piggy.json"; // piggy
+    // "ipfs://bafybeig37ioir76s7mg5oobetncojcm3c3hxasyd4rvid4jqhy4gkaheg4/?filename=0-PUG.json";
+     "ipfs://QmPDK74AL4zxFHY563uTdoSc9Xk9Q5HXMvzPwRmgVtdcZc?filename=piggy.json"; // piggy
 
     function run() external {
         address mostRecentlyDeployedBasicNft = DevOpsTools.get_most_recent_deployment("BasicNft", block.chainid);
