@@ -1,0 +1,11 @@
+{
+    "name": "PIGGY",
+    "description": "My first NFT, Piggy!",
+    "image": "https://ipfs.io/ipfs/Qmbkw7VcaBpsJqtha5fbTQX6cdPu4vN4npSj9JkhhkXSq3?filename=piggy.png",
+    "attributes": [
+      {
+        "trait_type": "cuteness",
+        "value": 100
+      }
+    ]
+}
