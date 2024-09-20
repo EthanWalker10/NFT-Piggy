@@ -5,6 +5,7 @@ libs = ["lib"]
 fs_permissions = [
     { access = "read", path = "./images/" },
     { access = "read", path = "./broadcast" },
+    { access = "read", path = ""}
 ]
 ffi = true
 

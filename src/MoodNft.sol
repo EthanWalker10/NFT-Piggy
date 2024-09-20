@@ -32,7 +32,7 @@ contract MoodNft is ERC721, Ownable {
         // how would you require payment for this NFT?
         uint256 tokenCounter = s_tokenCounter;
         _safeMint(msg.sender, tokenCounter);
-        s_tokenIdToState[tokenCounter] = NFTState.HAPPY;  // default, or I can set a param for this? 
+        s_tokenIdToState[tokenCounter] = NFTState.HAPPY; // default, or I can set a param for this?
         s_tokenCounter = s_tokenCounter + 1;
         emit CreatedNFT(tokenCounter);
     }
@@ -64,9 +64,9 @@ contract MoodNft is ERC721, Ownable {
             imageURI = s_sadSvgUri;
         }
         return string(
-            abi.encodePacked(  // part of Solidity’s built-in ABI 
+            abi.encodePacked( // part of Solidity’s built-in ABI
                 _baseURI(),
-                Base64.encode( 
+                Base64.encode(
                     bytes( // bytes casting actually unnecessary as 'abi.encodePacked()' returns a bytes
                         abi.encodePacked( // have our metadata as a json string in our contract
                             '{"name":"',
